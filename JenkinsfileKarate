@@ -1,18 +1,35 @@
 pipeline {
     agent any
-    stages {
-        stage('Run Karate Tests') {
-            steps {
 
-                // Paso 1: Ejecutar las pruebas de Karate
-                sh 'mvn clean test'  // O el comando que utilices para ejecutar tus pruebas de Karate
-            }
-        }
-        stage('Generate Karate Report') {
+	tools {
+        gradle 'Gradle 6.9.3'
+    }
+
+	options {
+		// Keep the 10 most recent builds
+		buildDiscarder(logRotator(numToKeepStr:'3'))
+		skipStagesAfterUnstable()
+	}
+
+    stages {
+        stage("Test") {
             steps {
-                // Paso 3: Generar el reporte de Karate
-                sh 'mvn karate:aggregate'  // O el comando que utilices para generar el reporte de Karate
-            }
+				dir("${env.WORKSPACE}/dummyapiWithKarate"){
+
+					sh "gradle clean build -x test"
+
+					sh "gradle test --tests *runners.ParallelRunnerTest*"
+
+					publishHTML(target: [
+						reportName : 'Cucumber with Karate report',
+						reportDir:   'build/cucumber-html-reports',
+						reportFiles: 'overview-features.html',
+						keepAll:     true,
+						alwaysLinkToLastBuild: true,
+						allowMissing: false
+					])
+				}
+			}
         }
     }
 }

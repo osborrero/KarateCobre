@@ -4,14 +4,14 @@ pipeline {
         stage('Run Karate Tests') {
             steps {
                 // Ejecutar los escenarios de Karate
-                sh 'mvn clean test'
+                sh './gradlew test'
             }
         }
 
         stage('Generate Karate Report') {
             steps {
                 // Generar el reporte de Karate
-                sh 'mvn karate:aggregate'
+                sh './gradlew karateReport'
             }
         }
     }

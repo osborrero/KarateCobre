@@ -1,0 +1,4979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("e58b9028-39ec-43f4-b48a-5dfe3c664230",{name:"OSVALDO"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.acceptance.test.prueba-tecnica</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-03-20 11:53:33 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:98]"><span>[1.1:98]</span> <span>Dado que se carga un archivo de recaudo con datos correctamente con usuarios que recibirán un link de pago, al procesarse el archivo se persisten en BD los recaudo creados exitosamente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/acceptance/test/prueba-tecnica.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">sample karate test script</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:98]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:98]</span>
+                <span class="scenario-name">Dado que se carga un archivo de recaudo con datos correctamente con usuarios que recibirán un link de pago, al procesarse el archivo se persisten en BD los recaudo creados exitosamente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def noveltyUuid = co.cobre.lib.qa.util.CommonUtils.generateUUID()</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * co.cobre.lib.qa.util.CommonUtils.wait(3)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def bucketName = &#39;test-automation-qa&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def folderRecaudoFiles = &#39;files-to-cash-in&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def noveltyUuid = java.util.UUID.randomUUID().toString()</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * print &quot;El uuid de la novedad es: &quot; + noveltyUuid</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def fileExtension = &quot;.csv&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def fullFileName = noveltyUuid+fileExtension</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    # --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def renameFile = FileUtils.renameFile(currentFilePath, currentFileName, newPathNewFile, noveltyUuid, fileExtension)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * waitTime(3)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * print &quot;El resultado de renombrar el archivo es: &quot; + renameFile</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * match renameFile == true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    # --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * print &quot;El bucket es: &quot; + bucketName</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * print &quot;El folder  es: &quot; + folderRecaudoFiles</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * S3ManagerInstance.uploadFileToBucket(bucketName, folderRecaudoFiles, fullFileName, newPathNewFile)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * waitTime(3)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    # --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderRecaudoFiles, fullFileName)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * print &quot;La existencia del archivo es: &quot; + fileExist</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * match fileExist == true</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    # --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def variableMapToReplaceInQueueMessageBody =</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    &quot;&quot;&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    {</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    &quot;fileName&quot;: &#39;#(fullFileName)&#39;,</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    &quot;workplacebankCode&quot;: &#39;&lt;clientCode&gt;&#39;,</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    &quot;bucketName&quot;: &#39;#(bucketName)&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    &quot;&quot;&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * SQSManager.sendMessageToQueue(&#39;&lt;jsonFileSqsEvents&gt;&#39;, &#39;testing-recaudo-qa.fifo&#39;, variableMapToReplaceInQueueMessageBody, &#39;&lt;pathJsonFileSqsEvents&gt;&#39;)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * waitTime(8)</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Uso de API REST para obtener información de las novedades</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * def noveltyUuid = co.cobre.lib.qa.util.CommonUtils.generateUUID()</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def noveltyUuid = Java.type(&quot;co.cobre.lib.qa.util.CommonUtils&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.64">11:53:33.721 src/test/java/acceptance/test/prueba-tecnica.feature:64
+* def noveltyUuid = Java.type(&quot;co.cobre.lib.qa.util.CommonUtils&quot;)
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.65">
+      <div class="step-ref failed">65</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>noveltyUuid.generateUUID()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.65">11:53:33.725 src/test/java/acceptance/test/prueba-tecnica.feature:65
+Given noveltyUuid.generateUUID()
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.66">
+      <div class="step-ref failed">66</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.66">11:53:33.725 src/test/java/acceptance/test/prueba-tecnica.feature:66
+Given url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.67">
+      <div class="step-ref failed">67</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header X-WorkplaceBankCode = &#39;TEST01&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.67">11:53:33.725 src/test/java/acceptance/test/prueba-tecnica.feature:67
+And header X-WorkplaceBankCode = &#39;TEST01&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.68">
+      <div class="step-ref failed">68</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.68">11:53:33.725 src/test/java/acceptance/test/prueba-tecnica.feature:68
+And retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.69">
+      <div class="step-ref failed">69</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.69">11:53:33.725 src/test/java/acceptance/test/prueba-tecnica.feature:69
+When method get
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.70">
+      <div class="step-ref failed">70</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.70">11:53:33.725 src/test/java/acceptance/test/prueba-tecnica.feature:70
+Then status 200
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.71">
+      <div class="step-ref failed">71</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def totalAmount = response.cashInNovelty.totalAmount</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.71">11:53:33.725 src/test/java/acceptance/test/prueba-tecnica.feature:71
+* def totalAmount = response.cashInNovelty.totalAmount
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.72">
+      <div class="step-ref failed">72</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def status = response.cashInNovelty.status</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.72">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:72
+* def status = response.cashInNovelty.status
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.73">
+      <div class="step-ref failed">73</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def totalNovelties = response.cashInNoveltyDetailsCounters.total</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.73">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:73
+* def totalNovelties = response.cashInNoveltyDetailsCounters.total
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.74">
+      <div class="step-ref failed">74</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def validationError = response.cashInNoveltyDetailsCounters.validationError</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.74">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:74
+* def validationError = response.cashInNoveltyDetailsCounters.validationError
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.75">
+      <div class="step-ref failed">75</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == &#39;&lt;&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.75">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:75
+* def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == &#39;&lt;&gt;&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.76">
+      <div class="step-ref failed">76</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.status == &#39;VALIDATED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.76">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:76
+* match getNovelty.status == &#39;VALIDATED&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.77">
+      <div class="step-ref failed">77</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.totalNovelties == &#39;3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.77">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:77
+* match getNovelty.totalNovelties == &#39;3&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.78">
+      <div class="step-ref failed">78</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.validationError == &#39;0&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.78">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:78
+* match getNovelty.validationError == &#39;0&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.79">
+      <div class="step-ref failed">79</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNovelty.created == &#39;3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.79">11:53:33.732 src/test/java/acceptance/test/prueba-tecnica.feature:79
+* match getNovelty.created == &#39;3&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.80">
+      <div class="step-ref failed">80</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>waitTime(3)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.80">11:53:33.737 src/test/java/acceptance/test/prueba-tecnica.feature:80
+* waitTime(3)
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># --------------------------------------------------------------- #</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Uso de API REST para obtener información de las novelty-details</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.84">
+      <div class="step-ref failed">84</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + &#39;respuestaEsperadaDatosCorrectos.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.84">11:53:33.739 src/test/java/acceptance/test/prueba-tecnica.feature:84
+* def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + &#39;respuestaEsperadaDatosCorrectos.json&#39;)
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.85">
+      <div class="step-ref failed">85</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def pageInt = parseInt(&#39;1&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.85">11:53:33.739 src/test/java/acceptance/test/prueba-tecnica.feature:85
+* def pageInt = parseInt(&#39;1&#39;)
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.86">
+      <div class="step-ref failed">86</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def sizeInt = parseInt(&#39;3&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.86">11:53:33.742 src/test/java/acceptance/test/prueba-tecnica.feature:86
+* def sizeInt = parseInt(&#39;3&#39;)
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.87">
+      <div class="step-ref failed">87</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;+&#39;/novelty-details&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.87">11:53:33.742 src/test/java/acceptance/test/prueba-tecnica.feature:87
+Given url &#39;https://test-container-qa.prueba.co/v1/entity/novelties/&#39;+noveltyUuid+&#39;&#39;+&#39;/novelty-details&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.88">
+      <div class="step-ref failed">88</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>header X-WorkplaceBankCode = &#39;TEST01&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.88">11:53:33.742 src/test/java/acceptance/test/prueba-tecnica.feature:88
+And header X-WorkplaceBankCode = &#39;TEST01&#39;
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+src/test/java/acceptance/test/prueba-tecnica.feature:88
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.89">
+      <div class="step-ref failed">89</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>params {page: &#39;0&#39;, size: &#39;100&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.89">11:53:33.742 src/test/java/acceptance/test/prueba-tecnica.feature:89
+And params {page: &#39;0&#39;, size: &#39;100&#39;}
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+src/test/java/acceptance/test/prueba-tecnica.feature:88
+src/test/java/acceptance/test/prueba-tecnica.feature:89
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.90">
+      <div class="step-ref failed">90</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>retry until responseStatus == 200 &amp;&amp; response.content != []</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.90">11:53:33.752 src/test/java/acceptance/test/prueba-tecnica.feature:90
+And retry until responseStatus == 200 &amp;&amp; response.content != []
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+src/test/java/acceptance/test/prueba-tecnica.feature:88
+src/test/java/acceptance/test/prueba-tecnica.feature:89
+src/test/java/acceptance/test/prueba-tecnica.feature:90
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.91">
+      <div class="step-ref failed">91</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.91">11:53:33.752 src/test/java/acceptance/test/prueba-tecnica.feature:91
+When method get
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+src/test/java/acceptance/test/prueba-tecnica.feature:88
+src/test/java/acceptance/test/prueba-tecnica.feature:89
+src/test/java/acceptance/test/prueba-tecnica.feature:90
+src/test/java/acceptance/test/prueba-tecnica.feature:91
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.92">
+      <div class="step-ref failed">92</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.92">11:53:33.752 src/test/java/acceptance/test/prueba-tecnica.feature:92
+Then status 200
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+src/test/java/acceptance/test/prueba-tecnica.feature:88
+src/test/java/acceptance/test/prueba-tecnica.feature:89
+src/test/java/acceptance/test/prueba-tecnica.feature:90
+src/test/java/acceptance/test/prueba-tecnica.feature:91
+src/test/java/acceptance/test/prueba-tecnica.feature:92
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.93">
+      <div class="step-ref failed">93</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def content = response.content</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.93">11:53:33.752 src/test/java/acceptance/test/prueba-tecnica.feature:93
+* def content = response.content
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+src/test/java/acceptance/test/prueba-tecnica.feature:88
+src/test/java/acceptance/test/prueba-tecnica.feature:89
+src/test/java/acceptance/test/prueba-tecnica.feature:90
+src/test/java/acceptance/test/prueba-tecnica.feature:91
+src/test/java/acceptance/test/prueba-tecnica.feature:92
+src/test/java/acceptance/test/prueba-tecnica.feature:93
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.94">
+      <div class="step-ref failed">94</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match getNoveltyDetails.content contains deep dataWithExpectedInformation</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.94">11:53:33.752 src/test/java/acceptance/test/prueba-tecnica.feature:94
+* match getNoveltyDetails.content contains deep dataWithExpectedInformation
+&gt;&gt; src/test/java/acceptance/test/prueba-tecnica.feature:98
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   karate.log(&quot;Cargando configuraciones&quot;);
+03:   return config;
+04: }
+05: 
+06: function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+07:     * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+08:     * waitTime(3)
+09:     * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+10:     * print &quot;La existencia del archivo es: &quot; + fileExist
+11:     * match fileExist == true
+12: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:6:0 Expected ) but found function
+function uploadFileAndVerifyExistence(bucketName, folderName, fileName, localFilePath) {
+^
+Unnamed:7:4 Expected an operand but found *
+    * S3ManagerInstance.uploadFileToBucket(bucketName, folderName, fileName, localFilePath)
+    ^
+Unnamed:8:4 Expected an operand but found *
+    * waitTime(3)
+    ^
+Unnamed:9:4 Expected an operand but found *
+    * def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderName, fileName)
+    ^
+Unnamed:10:4 Expected an operand but found *
+    * print &quot;La existencia del archivo es: &quot; + fileExist
+    ^
+Unnamed:11:4 Expected an operand but found *
+    * match fileExist == true
+    ^
+Unnamed:12:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:372)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:391)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- java.util.Iterator.forEachRemaining(Iterator.java:116)
+
+src/test/java/acceptance/test/prueba-tecnica.feature:64
+src/test/java/acceptance/test/prueba-tecnica.feature:65
+src/test/java/acceptance/test/prueba-tecnica.feature:66
+src/test/java/acceptance/test/prueba-tecnica.feature:67
+src/test/java/acceptance/test/prueba-tecnica.feature:68
+src/test/java/acceptance/test/prueba-tecnica.feature:69
+src/test/java/acceptance/test/prueba-tecnica.feature:70
+src/test/java/acceptance/test/prueba-tecnica.feature:71
+src/test/java/acceptance/test/prueba-tecnica.feature:72
+src/test/java/acceptance/test/prueba-tecnica.feature:73
+src/test/java/acceptance/test/prueba-tecnica.feature:74
+src/test/java/acceptance/test/prueba-tecnica.feature:75
+src/test/java/acceptance/test/prueba-tecnica.feature:76
+src/test/java/acceptance/test/prueba-tecnica.feature:77
+src/test/java/acceptance/test/prueba-tecnica.feature:78
+src/test/java/acceptance/test/prueba-tecnica.feature:79
+src/test/java/acceptance/test/prueba-tecnica.feature:80
+src/test/java/acceptance/test/prueba-tecnica.feature:84
+src/test/java/acceptance/test/prueba-tecnica.feature:85
+src/test/java/acceptance/test/prueba-tecnica.feature:86
+src/test/java/acceptance/test/prueba-tecnica.feature:87
+src/test/java/acceptance/test/prueba-tecnica.feature:88
+src/test/java/acceptance/test/prueba-tecnica.feature:89
+src/test/java/acceptance/test/prueba-tecnica.feature:90
+src/test/java/acceptance/test/prueba-tecnica.feature:91
+src/test/java/acceptance/test/prueba-tecnica.feature:92
+src/test/java/acceptance/test/prueba-tecnica.feature:93
+src/test/java/acceptance/test/prueba-tecnica.feature:94
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

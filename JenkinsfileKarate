@@ -1,17 +1,18 @@
 pipeline {
     agent any
-
+    stages {
         stage('Run Karate Tests') {
             steps {
-                // Ejecutar los escenarios de Karate
-                sh './gradlew test'
+
+                // Paso 1: Ejecutar las pruebas de Karate
+                sh './gradlew test'  // O el comando que utilices para ejecutar tus pruebas de Karate
             }
         }
-
         stage('Generate Karate Report') {
             steps {
-                // Generar el reporte de Karate
-                sh './gradlew karateReport'
+                // Paso 3: Generar el reporte de Karate
+                sh './gradlew karateReport'  // O el comando que utilices para generar el reporte de Karate
             }
         }
     }
+}

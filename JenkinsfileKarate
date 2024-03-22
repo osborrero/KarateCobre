@@ -32,7 +32,7 @@ pipeline{
 post {
     always {
         // Archivar los resultados de pruebas
-        junit 'target/karate-reports/*.xml'
+        junit 'target/karate-reports/*.html'
     }
 }
 }

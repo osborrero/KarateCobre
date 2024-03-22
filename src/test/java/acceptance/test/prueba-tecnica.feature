@@ -162,7 +162,7 @@ Feature: sample karate test script
 
 
   @regression
-  Scenario Outline: Dado que se quiere Actualizar fecha de vencimiento por usuario
+  Scenario Outline: Dado que se quiere Actualizar fecha de vencimiento por el id del usuario
     # --------------------------------------------------------------- #
     * def File = Java.type('co.cobre.lib.qa.util.ProcessesIntheFile')
     * def mensaje = File.ModifyExpirationDate('<csvFilePath>','<Document>','<newExpirationDate>')

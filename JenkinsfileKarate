@@ -3,48 +3,33 @@ pipeline{
 
 
     stages{
-        stage ('Clean WorkSpace Directory'){
-            steps {
-                //define the single or multiple step
-                bat 'echo CleanUp Stage'
-                cleanWs notFailBuild: true
-            }
-        }
-        stage ('Git CheckOut'){
-            steps {
-               //define the single or multiple step
-                bat 'echo Git Checkout'
-                checkout([$class: 'GitSCM', branches: [[name: '**']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/osborrero/KarateCobre.git']]])
-            }
-
-        }
         stage ('Restore Packages'){
             steps {
                 //define the single or multiple step
                 bat 'echo Restore Package'
             }
         }
-        stage ('Build'){
+        stage('Build') {
             steps {
-               //define the single or multiple step
-                bat 'echo Build'
-                bat 'mvn clean compile'
+                // Build your Maven project
+                bat 'mvn clean test'
+            }
+        }
 
-            }
-        }
-        stage ('Deploy'){
+        stage('Karate Tests') {
             steps {
-                bat 'echo Deploying the application..'
+                // Run Karate tests
+                bat 'mvn test-compile exec:java -Dexec.mainClass="com.intuit.karate.Main" -Dexec.args="--features=classpath:features --tags=@testUsers"'
             }
         }
-        stage('Run Karate Tests') {
-            steps {
-                // Ejecución de los tests de Karate
-                bat 'mvn test' // Utiliza bat en lugar de sh para comandos de Windows
+                stage('Generate Report') {
+                    steps {
+                        // Generate Karate HTML report
+                        bat 'mvn verify'
+                    }
+                }
             }
-        }
-    }
-    post {
+     post {
         always {
             junit 'target/karate-reports/*.xml'
             cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'target/karate-reports', pendingStepsNumber: -1, reportTitle: 'Karate Test Execution', skipEmptyJSONFiles: true, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1

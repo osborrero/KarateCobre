@@ -1,40 +1,55 @@
-pipeline {
+pipeline{
     agent any
 
-    stages {
-        stage('Build Dependencies') {
+
+    stages{
+        stage ('Clean WorkSpace Directory'){
             steps {
-                sh 'mvn clean install' // Executes Maven commands for building and installing dependencies
+                //define the single or multiple step
+                bat 'echo CleanUp Stage'
+                cleanWs notFailBuild: true
             }
         }
-        stage('Run Tests') {
+        stage ('Git CheckOut'){
             steps {
-                sh 'java -jar target/your-project-name-jar-with-dependencies.jar' // Replace with your Karate JAR name
+               //define the single or multiple step
+                bat 'echo Git Checkout'
+                checkout([$class: 'GitSCM', branches: [[name: '**']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/osborrero/KarateCobre.git']]])
+            }
+
+        }
+        stage ('Restore Packages'){
+            steps {
+                //define the single or multiple step
+                bat 'echo Restore Package'
             }
         }
-        stage('Generate Report') {
+        stage ('Build'){
             steps {
-                script {
-                    // Read the karateOutputPath from the previous stage (optional)
-                    def karateOutputPath = sh(script: 'cat karate-output.txt', returnStdout: true).trim()
-                    generateReport(karateOutputPath) // Call the generateReport method
-                }
+               //define the single or multiple step
+                bat 'echo Build'
+                bat 'mvn clean compile'
+
+            }
+        }
+        stage ('Deploy'){
+            steps {
+                bat 'echo Deploying the application..'
+            }
+        }
+        stage ('Run the Test') {
+            steps {
+                 //define the single or multiple step
+                bat 'echo Test Execution Started'
+                bat 'mvn -P %Environment% test'
             }
         }
     }
-
     post {
         always {
-            archiveArtifacts '**/*.json' // Archive all generated JSON reports
-            junit 'target/**/*.xml' // Archive JUnit reports (if generated)
+            junit 'target/surefire-reports/*.xml'
+            cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'target/surefire-reports', pendingStepsNumber: -1, reportTitle: 'Karate Test Execution', skipEmptyJSONFiles: true, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
         }
 
     }
-}
-
-def generateReport(String karateOutputPath) {
-    // Code from your GeneralRunner.java (assuming it's in the same directory as Jenkinsfile)
-    sh """
-        java -cp . com.your.package.GeneralRunner generateReport '${karateOutputPath}'
-    """
 }

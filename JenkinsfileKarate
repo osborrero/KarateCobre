@@ -1,35 +1,45 @@
 pipeline {
     agent any
 
-	tools {
-        gradle 'Gradle 6.9.3'
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout your source code repository
+                git 'https://github.com/osborrero/KarateCobre.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Compile and package the Maven project
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                // Run Karate tests
+                sh 'mvn test'
+            }
+        }
+
+        stage('Generate Report') {
+            steps {
+                // Generate Karate test report
+                sh 'mvn surefire-report:report'
+            }
+        }
     }
 
-	options {
-		// Keep the 10 most recent builds
-		buildDiscarder(logRotator(numToKeepStr:'3'))
-		skipStagesAfterUnstable()
-	}
+    post {
+        always {
+            // Archive the generated reports
+            archiveArtifacts artifacts: 'target/surefire-reports/*.xml'
+        }
 
-    stages {
-        stage("Test") {
-            steps {
-				dir("${env.WORKSPACE}/dummyapiWithKarate"){
-
-					sh "gradle clean build -x test"
-
-					sh "gradle test --tests *runners.ParallelRunnerTest*"
-
-					publishHTML(target: [
-						reportName : 'Cucumber with Karate report',
-						reportDir:   'build/cucumber-html-reports',
-						reportFiles: 'overview-features.html',
-						keepAll:     true,
-						alwaysLinkToLastBuild: true,
-						allowMissing: false
-					])
-				}
-			}
+        success {
+            // If the build is successful, publish the JUnit test results
+            junit 'target/surefire-reports/*.xml'
         }
     }
 }

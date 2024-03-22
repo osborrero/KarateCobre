@@ -37,11 +37,10 @@ pipeline{
                 bat 'echo Deploying the application..'
             }
         }
-        stage ('Run the Test') {
+        stage('Run Karate Tests') {
             steps {
-                 //define the single or multiple step
-                bat 'echo Test Execution Started'
-                bat 'mvn -P %Environment% test'
+                // Ejecución de los tests de Karate
+                sh 'mvn test'
             }
         }
     }

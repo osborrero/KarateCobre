@@ -28,12 +28,7 @@ pipeline {
             archiveArtifacts '**/*.json' // Archive all generated JSON reports
             junit 'target/**/*.xml' // Archive JUnit reports (if generated)
         }
-        success {
-            // Optional: Send notifications on success
-        }
-        failure {
-            // Optional: Send notifications on failure
-        }
+
     }
 }
 

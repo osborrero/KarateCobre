@@ -2,44 +2,44 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Build Dependencies') {
             steps {
-                // Checkout your source code repository
-                git 'https://github.com/osborrero/KarateCobre.git'
+                sh 'mvn clean install' // Executes Maven commands for building and installing dependencies
             }
         }
-
-        stage('Build') {
+        stage('Run Tests') {
             steps {
-                // Compile and package the Maven project
-                sh 'mvn clean package'
+                sh 'java -jar target/your-project-name-jar-with-dependencies.jar' // Replace with your Karate JAR name
             }
         }
-
-        stage('Test') {
-            steps {
-                // Run Karate tests
-                sh 'mvn test'
-            }
-        }
-
         stage('Generate Report') {
             steps {
-                // Generate Karate test report
-                sh 'mvn surefire-report:report'
+                script {
+                    // Read the karateOutputPath from the previous stage (optional)
+                    def karateOutputPath = sh(script: 'cat karate-output.txt', returnStdout: true).trim()
+                    generateReport(karateOutputPath) // Call the generateReport method
+                }
             }
         }
     }
 
     post {
         always {
-            // Archive the generated reports
-            archiveArtifacts artifacts: 'target/surefire-reports/*.xml'
+            archiveArtifacts '**/*.json' // Archive all generated JSON reports
+            junit 'target/**/*.xml' // Archive JUnit reports (if generated)
         }
-
         success {
-            // If the build is successful, publish the JUnit test results
-            junit 'target/surefire-reports/*.xml'
+            // Optional: Send notifications on success
+        }
+        failure {
+            // Optional: Send notifications on failure
         }
     }
+}
+
+def generateReport(String karateOutputPath) {
+    // Code from your GeneralRunner.java (assuming it's in the same directory as Jenkinsfile)
+    sh """
+        java -cp . com.your.package.GeneralRunner generateReport '${karateOutputPath}'
+    """
 }

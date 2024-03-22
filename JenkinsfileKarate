@@ -7,11 +7,6 @@ pipeline {
                 cleanWs()
             }
         }
-        stage('Checkout') {
-            steps {
-                git branch: 'master', credentialsId: 'your_credentials_id', url: 'your_repository_url'
-            }
-        }
         stage('Build') {
             steps {
                 bat 'mvn clean test'

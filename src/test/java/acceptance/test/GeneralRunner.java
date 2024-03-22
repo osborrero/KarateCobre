@@ -2,26 +2,36 @@ package acceptance.test;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
-import com.intuit.karate.junit5.Karate;
-import cucumber.api.CucumberOptions;
-import nonapi.io.github.classgraph.utils.Assert;
-import org.junit.jupiter.api.Test;
-import org.apache.commons.io.FileUtils;
-import net.masterthought.cucumber.Configuration;
-import net.masterthought.cucumber.ReportBuilder;
-
-
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@CucumberOptions(features = "classpath:features")
 public class GeneralRunner {
-    @Karate.Test
-    Karate testUsers() {
-        return Karate.run("prueba-tecnica.feature").relativeTo(getClass());
+    @Test
+    void testParallel() {
+        Results results = Runner.path("classpath:acceptance/test")
+                .outputCucumberJson(true)
+                .parallel(1);
+        generateReport(results.getReportDir());
+        assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
+
+    public static void generateReport(String karateOutputPath) {
+        Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
+        List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
+        jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
+        Configuration config = new Configuration(new File("target"), "Acceptance test report");
+        ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
+        reportBuilder.generateReports();
+    }
+
 }

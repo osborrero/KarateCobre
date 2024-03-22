@@ -40,7 +40,7 @@ pipeline{
         stage('Run Karate Tests') {
             steps {
                 // Ejecución de los tests de Karate
-                sh 'mvn test'
+                bat 'mvn test' // Utiliza bat en lugar de sh para comandos de Windows
             }
         }
     }

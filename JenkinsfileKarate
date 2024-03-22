@@ -1,38 +1,31 @@
-pipeline{
+pipeline {
     agent any
 
-
-    stages{
-        stage ('Restore Packages'){
+    stages {
+        stage('Clean workspace') {
             steps {
-                //define the single or multiple step
-                bat 'echo Restore Package'
+                cleanWs()
+            }
+        }
+        stage('Checkout') {
+            steps {
+                git branch: 'master', credentialsId: 'your_credentials_id', url: 'your_repository_url'
             }
         }
         stage('Build') {
             steps {
-                // Build your Maven project
                 bat 'mvn clean test'
             }
         }
-
-        stage('Karate Tests') {
+        stage('Archive Test Results') {
             steps {
-                // Run Karate tests
-                bat 'mvn test-compile exec:java -Dexec.mainClass="com.intuit.karate.Main" -Dexec.args="--features=classpath:features --tags=@testUsers"'
+                junit 'target/surefire-reports/*.xml'
             }
         }
-                stage('Generate Report') {
-                    steps {
-                        // Generate Karate HTML report
-                        bat 'mvn verify'
-                    }
-                }
-            }
-post {
-    always {
-        // Archivar los resultados de pruebas
-        junit 'target/karate-reports/*.html'
     }
-}
+    post {
+        always {
+            cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'target/cucumber-json', sortingMethod: 'ALPHABETICAL'
+        }
+    }
 }
